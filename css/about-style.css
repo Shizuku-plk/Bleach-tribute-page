@@ -1,0 +1,124 @@
+.header {
+  color: hsl(0, 100%, 100%);
+  background-color: hsl(0, 100%, 0%);
+}
+
+.logo h1 {
+  /*typography*/
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: #E32636 0px 0px 25px;
+}
+/*              PAGE 1                   */
+.page-1 {
+  background: hsl(0, 0%, 2%);
+  color: hsl(0, 100%, 100%);
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+caption {
+  font-weight: bold;
+}
+
+th {
+  text-align: left;
+  padding: 0.5em;
+}
+
+td {
+  padding: 1em;
+}
+
+:is(table, th, td) {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+tr:nth-child(odd) {
+  background-color: hsl(0, 0%, 3.8%);
+}
+
+tr :is(.year) {
+  text-align: center;
+}
+
+.page-2 {
+  background-color: hsl(0, 0%, 2%);
+  color: hsl(0, 0%, 90%);
+}
+
+.page-2 {
+  /*display*/
+  display: grid;
+  place-content: center;
+  /*box model*/
+  padding: 1em;
+}
+
+.contact-form {
+  border: 1px solid;
+  padding: 1em;
+}
+
+.contact-form label + input {
+  /*display*/
+  display: block;
+}
+
+.contact-form * + div {
+  /*box model*/
+  margin: 1em 0;
+}
+
+/*                 FOOTER                   */
+
+footer {
+  background-color: hsl(0, 100%, 0%);
+  padding: 2em;
+}
+
+.footer-nav {
+  display: grid;
+  place-content: center;
+}
+
+.footer-nav ul > * + * {
+  margin-top: 1em;
+}
+
+.footer-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: hsl(0, 0%, 90%);
+}
+
+@media (min-width: 1280px) {
+  .footer-nav a {
+    font-size: 1.3rem;
+    background:
+      linear-gradient(
+        to right,
+        hsl(0, 100%, 0%),
+        hsl(0, 100%, 0%)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        hsl(0, 100%, 25%),
+        hsl(0, 100%, 25%)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+
+  .footer-nav a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+}

@@ -1,0 +1,226 @@
+.header {
+  color: hsl(0, 100%, 100%);
+  background-color: hsl(0, 100%, 0%);
+}
+
+.logo h1 {
+  /*typography*/
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: #E32636 0px 0px 25px;
+}
+
+:is(.page-1, .container-2, .container-3, .container-4) {
+  background: hsl(0, 0%, 2%);
+  color: hsl(0, 100%, 100%);
+}
+
+/*                             PAGE 1                       */
+
+.page-1 {
+  /*display*/
+  display: grid;
+  place-content: center;
+  /*box model*/
+  padding: 1em;
+}
+
+.page-1 p {
+  /*typography*/
+  color: hsl(0, 0%, 90%);
+  line-height: 1.6;
+  width: 30ch;
+}
+
+.page1-btn {
+  /*box model*/
+  padding: 1em;
+  margin-top: 1em;
+  /*typography*/
+  text-align: center;
+  /*msc*/
+  border: 1px solid white;
+}
+
+.page1-btn a {
+  /*typography*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: hsl(0, 0%, 80%);
+}
+
+/*                             PAGE 2                       */
+
+.page-2 {
+/*display*/
+  display: flex;
+  flex-wrap: wrap;
+  /*box model*/
+  padding: 1em;
+}
+
+.page-2 > * + * {
+  margin-top: 1em;
+}
+
+.card {
+  /*box model*/
+  padding: 1em;
+  /*positioning*/
+  margin-left: auto;
+  margin-right: auto;
+  /*msc*/
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.card span {
+  font-weight: bold;
+}
+
+.card p {
+  /*typography*/
+  color: hsl(0, 0%, 90%);
+  line-height: 1.5;
+  width: 25ch;
+}
+
+.card-btn {
+  /*box model*/
+  padding: 1em;
+  margin-top: 1em;
+  /*typography*/
+  text-align: center;
+  /*msc*/
+  border: 1px solid;
+}
+
+.card-btn a {
+  /*typography*/
+  text-decoration: none;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 80%);
+}
+
+/*                             PAGE 3                       */
+
+.page-3 {
+  padding: 2em;
+}
+
+/*                             PAGE 4                       */
+
+.page-4 {
+  /*display*/
+  display: flex;
+  flex-wrap: wrap;
+  /*box model*/
+  padding: 1em;
+}
+
+.page-4 > * + * {
+  margin-top: 2em;
+}
+
+.testimonial {
+  /*box model*/
+  padding: 1em;
+  /*positioning*/
+  margin-left: auto;
+  margin-right: auto;
+  /*msc*/
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.testimonial h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonial p {
+  /*typography*/
+  color: hsl(0, 0%, 90%);
+  line-height: 1.5;
+  width: 25ch;
+}
+
+.testimonial-btn {
+  /*box model*/
+  padding: 1em;
+  margin-top: 1em;
+  /*typography*/
+  text-align: center;
+  /*msc*/
+  border: 1px solid;
+}
+
+.testimonial-btn a {
+  /*typography*/
+  text-decoration: none;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 80%);
+}
+
+/*                             FOOTER                        */
+
+footer {
+  background: linear-gradient(345deg, hsl(0, 0%, 7.1%), hsl(0, 0%, 2%));
+  padding: 2em;
+}
+
+.footer-nav {
+  /*display*/
+  display: grid;
+  place-content: center;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav ul > * + * {
+  margin-top: 1em;
+}
+
+.footer-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: hsl(0, 0%, 90%);
+}
+
+/*///////////////////////// LAPTOP////////////////////////////////*/
+@media (min-width: 1280px) {
+  .page-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .footer-nav a {
+    font-size: 1.3rem;
+    background:
+      linear-gradient(
+        to right,
+        hsl(0, 100%, 0%),
+        hsl(0, 100%, 0%)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        hsl(0, 100%, 25%),
+        hsl(0, 100%, 25%)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+
+  .footer-nav a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+}
