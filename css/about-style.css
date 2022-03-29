@@ -59,19 +59,18 @@ tr :is(.year) {
   padding: 1em;
 }
 
-.contact-form {
-  border: 1px solid;
+.page-2 {
   padding: 1em;
 }
 
-.contact-form label + input {
+.page-2 label + input {
   /*display*/
   display: block;
 }
 
-.contact-form * + div {
+.page-2 * + div {
   /*box model*/
-  margin: 1em 0;
+  margin: .5em 0;
 }
 
 /*                 FOOTER                   */
