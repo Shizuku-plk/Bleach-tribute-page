@@ -71,8 +71,9 @@
   margin-left: auto;
   margin-right: auto;
   /*msc*/
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 15px;
+  box-shadow: hsl(0, 100%, 25%) -3px -10px 20px;
 }
 
 .card span {
@@ -130,7 +131,7 @@
   margin-left: auto;
   margin-right: auto;
   /*msc*/
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 15px;
 }
 
