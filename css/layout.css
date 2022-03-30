@@ -10,9 +10,21 @@
   text-shadow: #E32636 0px 0px 25px;
 }
 
-:is(.page-1, .container-2, .container-3, .container-4) {
+:is(.hero-news, .page-1, .container-2, .container-3, .container-4) {
   background: hsl(0, 0%, 2%);
   color: hsl(0, 100%, 100%);
+}
+/*                             news                       */
+.hero-news {
+  /*display*/
+  display: grid;
+  place-content: center;
+  /*box model*/
+  padding: 2em;
+}
+
+.hero-news iframe {
+  padding: 2em;
 }
 
 /*                             PAGE 1                       */
