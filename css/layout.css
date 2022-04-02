@@ -37,6 +37,10 @@
   padding: 1em;
 }
 
+video {
+  width: 350px;
+}
+
 .page-1 p {
   /*typography*/
   color: hsl(0, 0%, 90%);
