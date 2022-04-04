@@ -38,7 +38,9 @@
 }
 
 video {
+  /*msc*/
   width: 350px;
+  filter: drop-shadow(1px 1px 5px rgb(172, 58, 58));
 }
 
 .page-1 p {

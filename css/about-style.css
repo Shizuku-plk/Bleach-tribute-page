@@ -6,7 +6,7 @@
 .logo h1 {
   /*typography*/
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-shadow: #E32636 0px 0px 25px;
 }
 /*              PAGE 1                   */
@@ -44,6 +44,16 @@ tr:nth-child(odd) {
 
 tr :is(.year) {
   text-align: center;
+}
+
+.page-audio {
+  /*display*/
+  display: grid;
+  place-content: center;
+}
+
+.page-audio audio {
+  filter: drop-shadow(1px 1px 1px rgb(175, 44, 44));
 }
 
 .page-2 {
