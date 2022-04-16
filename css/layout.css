@@ -272,7 +272,7 @@ footer {
     align-content: center;
   }
   
-  .footer-nav a {
+  :is(.footer-nav, .main-nav) a {
     font-size: 1.3rem;
     background:
       linear-gradient(
@@ -292,7 +292,7 @@ footer {
     transition: background-size 400ms;
   }
 
-  .footer-nav a:hover {
+  :is(.footer-nav, .main-nav) a:hover {
     background-size: 0 3px, 100% 3px;
   }
 }
