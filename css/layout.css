@@ -10,6 +10,33 @@
   text-shadow: #E32636 0px 0px 25px;
 }
 
+.main-nav {
+  padding: 1em;
+}
+
+.main-nav ul {
+  list-style: none;
+  /*display*/
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-nav ul li {
+  /*display*/
+  display: inline-block;
+  /*box model*/
+  padding: 1em;
+}
+
+.main-nav ul li a {
+  /*typography*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 90%);
+}
+
 :is(.hero-news, .page-1, .container-2, .container-3, .container-4) {
   background: hsl(0, 0%, 2%);
   color: hsl(0, 100%, 100%);
@@ -234,6 +261,10 @@ footer {
 
 /*///////////////////////// LAPTOP////////////////////////////////*/
 @media (min-width: 1280px) {
+
+  .main-nav ul li a {
+    font-size: 1.3rem;
+  }
   .page-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
