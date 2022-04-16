@@ -71,15 +71,26 @@ video {
 /*                             PAGE 2                       */
 
 .page-2 {
-/*display*/
+  /*display*/
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   /*box model*/
   padding: 1em;
 }
 
 .page-2 > * + * {
-  margin-top: 1em;
+  margin: 1em 0 0 0;
+}
+
+@media (min-width: 1180px) {
+  .page-2 {
+    flex-direction: row;
+  }
+
+  .page-2 > * + * {
+    margin: 0 0 0 1em;
+  }
 }
 
 .card {
@@ -134,12 +145,23 @@ video {
   /*display*/
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   /*box model*/
   padding: 1em;
 }
 
 .page-4 > * + * {
-  margin-top: 2em;
+  margin: 2em 0 0 0;
+}
+
+@media (min-width: 1180px) {
+  .page-4 {
+    flex-direction: row;
+  }
+
+  .page-4 > * + * {
+    margin: 0 0 0 2em;
+  }
 }
 
 .testimonial {
