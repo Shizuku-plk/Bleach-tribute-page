@@ -149,9 +149,19 @@ footer {
 }
 
 @media (min-width: 1280px) {
+
+  .about {
+    min-height: 100vh;
+  }
+
+  .page-1 {
+    min-height: 70vh;
+  }
+
   .main-nav ul li a {
     font-size: 1.3rem;
   }
+
   :is(.footer-nav, .main-nav) a {
     font-size: 1.3rem;
     background:

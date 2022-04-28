@@ -265,6 +265,31 @@ footer {
   .main-nav ul li a {
     font-size: 1.3rem;
   }
+
+  .hero-news {
+    min-height: 50vh;
+  }
+
+  .hero-news video {
+    padding: 1em;
+  }
+
+  .page-1 {
+    min-height: 70vh;
+  }
+
+  .container-2 {
+    min-height: 150vh;
+  }
+
+  .container-3 {
+    min-height: 100vh;
+  }
+
+  .container-4 {
+    min-height: 100vh;
+  }
+
   .page-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
